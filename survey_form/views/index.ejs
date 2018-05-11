@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form action="/inform" method="POST">
+        <h5>Your Name: <input type="text" name="name"></h5><br>
+        <h5>Dojo Location: <select name="location"><br>
+            <option value="Mt">Mt</option>
+            <option value="Sierra">Sierra</option>
+            <option value="San Jose">San Jose</option>
+        </select></h5><br>
+        <h5>Favorite Language: <select name="language">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="MEAN">MEAN</option>
+        </select></h5><br>
+        <h5>Comment: <textarea name="comment" cols="30" rows="3"></textarea></h5>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

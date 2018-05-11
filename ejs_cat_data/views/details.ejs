@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detail Page for <%= name %></h1>
+    <img src="<%= image %>" alt=""><br>
+    <h3>Favorite Food: <%= fav %></h3>
+    <h3>Age: <%= age %></h3>
+    <h3>Sleeping spots:</h3>
+    <% for (var x in spots) { %>
+    <h5><%= spots[x] %></h5>
+    <% } %>
+
+    <a href="/cats">Home</a>
+</body>
+</html>
